@@ -23,6 +23,6 @@ console .error (err);
 return ;
 }
 else if(cb == true){
-console .log ( 'successfully connected!' );
+console .log ( 'successfully connected!' ); //the database is sucessfully conected at the 10th turn
 }
 });
