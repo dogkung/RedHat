@@ -1,15 +1,16 @@
-function remoteMathService (cb) {
+function remoteMathService(cb) { 
+
 var one;
 var two; 
 
 //these are not semi colons very funny
 
 
-callOneService( function (err, num) {
+callOneService( function(err, num) {
 one = num;
 });
 
-callTwoService( function (err, num) {
+callTwoService( function(err, num) {
 two = num;
 });
 
