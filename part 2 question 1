@@ -12,8 +12,9 @@ console .log ( 'Done!. err=', err, ' : res = ', res );
 
 //Is it that foo should be instantiated before it is called?
 
+//also looking at this part of the code err and res should exist before they are written to screen
 foo( function (err, res){
-console .log ( 'Done!. err=', err, ' : res = ', res );
+console .log (  err, 'Done!. err=', res,' : res = ' );
 });
 
 function foo (callback) {
