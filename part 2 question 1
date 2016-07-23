@@ -1,0 +1,24 @@
+The first question
+
+function foo (callback) {
+doThing( function (err, res) {
+if (err) callback(err);
+callback( null , res);
+});
+}
+foo( function (err, res){
+console .log ( 'Done!. err=', err, ' : res = ', res );
+});
+
+//Is it that foo should be instantiated before it is called?
+
+foo( function (err, res){
+console .log ( 'Done!. err=', err, ' : res = ', res );
+});
+
+function foo (callback) {
+doThing( function (err, res) {
+if (err) callback(err);
+callback( null , res);
+});
+}
