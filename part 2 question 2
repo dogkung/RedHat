@@ -1,7 +1,7 @@
 function remoteMathService(cb) { 
 
 var one;
-var two; 
+var two; //simple unit test var one = 1; var two = 2;
 
 //these are not semi colons very funny
 
