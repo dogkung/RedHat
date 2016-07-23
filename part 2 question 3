@@ -22,5 +22,7 @@ if (err) {
 console .error (err);
 return ;
 }
+else if(cb == true){
 console .log ( 'successfully connected!' );
+}
 });
