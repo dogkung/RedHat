@@ -1,4 +1,5 @@
-//got to take kids to football have a look in a bit
+//not sure how you can create update and delete a repository that you do not own?
+// would be interested to see how someone did it
 <?php
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
