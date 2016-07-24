@@ -1,13 +1,15 @@
 <?php
-function get_content_from_github($url) {
-	$ch = curl_init();
-	curl_setopt($ch,CURLOPT_URL,$url);
-	curl_setopt($ch,CURLOPT_RETURNTRANSFER,1); 
-	curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,1);
-	$content = curl_exec($ch);
-	curl_close($ch);
-	return $content;
-}
+<?php
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_URL, 'https://gist.githubusercontent.com/jasonmadigan/009c15b5dc4b4eccd32b/raw/9a7ea345d6d9e924056a5ecdf46a72f082e51f34/users.json');
+$result = curl_exec($ch);
+curl_close($ch);
+
+$obj = json_decode($result);
+echo $result;
+?>
 
 
 
